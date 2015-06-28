@@ -55,6 +55,7 @@ setup(name='pyHMSA-fileformat-tiff',
       entry_points=\
         {
          'pyhmsa.fileformat.exporter':
-            ['TIFF = pyhmsa.fileformat.exporter.tiff:ExporterTIFF'],
+            ['TIFF = pyhmsa.fileformat.exporter.tiff:ExporterTIFF',
+             'TIFF (multi-page) = pyhmsa.fileformat.exporter.tiff:ExporterTIFFMultiPage'],
          }
      )

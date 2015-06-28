@@ -43,9 +43,10 @@ setup(name='pyHMSA-fileformat-tiff',
       packages=find_packages(),
       namespace_packages=['pyhmsa',
                           'pyhmsa.fileformat',
-                          'pyhmsa.fileformat.exporter'],
+                          'pyhmsa.fileformat.exporter',
+                          'pyhmsa.util'],
 
-      install_requires=['pyhmsa', 'tifffile'],
+      install_requires=['pyhmsa'],
       setup_requires=['nose', 'coverage'],
 
       zip_safe=True,

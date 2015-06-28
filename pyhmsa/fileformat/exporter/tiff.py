@@ -20,7 +20,6 @@ __license__ = "GPL v3"
 import os
 
 # Third party modules.
-import tifffile
 
 # Local modules.
 from pyhmsa.fileformat.exporter.exporter import _Exporter, _ExporterThread
@@ -28,6 +27,7 @@ from pyhmsa.spec.condition.acquisition import AcquisitionRasterXY
 from pyhmsa.spec.datum.analysislist import AnalysisList2D
 from pyhmsa.spec.datum.imageraster import ImageRaster2D, ImageRaster2DSpectral
 from pyhmsa.type.numerical import convert_unit
+import pyhmsa.util.tifffile as tifffile
 
 # Globals and constants variables.
 _INCH_TO_MM = 25.4

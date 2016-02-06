@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>pyhmsa-fileformat-tiff</name>
+	<name>pyhmsa-tiff</name>
 	<comment></comment>
 	<projects>
 		<project>pyhmsa</project>

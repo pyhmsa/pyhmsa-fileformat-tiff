@@ -15,7 +15,7 @@ BASEDIR = os.path.abspath(os.path.dirname(__file__))
 with open('README.rst', encoding='utf-8') as f:
     long_description = f.read()
 
-setup(name='pyHMSA-fileformat-tiff',
+setup(name='pyHMSA-tiff',
       version='0.1',
       description='',
       long_description=long_description,
@@ -23,7 +23,7 @@ setup(name='pyHMSA-fileformat-tiff',
       author='Philippe Pinard',
       author_email='philippe.pinard@gmail.com',
 
-      url='http://pyhmsa_tiff.readthedocs.org',
+      url='http://pyhmsa.readthedocs.org',
       license='MIT',
       keywords='microscopy microanalysis hmsa file format',
 

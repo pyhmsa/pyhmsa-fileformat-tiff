@@ -23,7 +23,7 @@ setup(name='pyHMSA-fileformat-tiff',
       author='Philippe Pinard',
       author_email='philippe.pinard@gmail.com',
 
-      url='http://pyhmsa.readthedocs.org',
+      url='http://pyhmsa_tiff.readthedocs.org',
       license='MIT',
       keywords='microscopy microanalysis hmsa file format',
 
@@ -41,13 +41,9 @@ setup(name='pyHMSA-fileformat-tiff',
         ],
 
       packages=find_packages(),
-      namespace_packages=['pyhmsa',
-                          'pyhmsa.fileformat',
-                          'pyhmsa.fileformat.exporter',
-                          'pyhmsa.util'],
 
       install_requires=['pyhmsa'],
-      setup_requires=['nose', 'coverage'],
+      tests_require=['nose', 'coverage'],
 
       zip_safe=True,
 
@@ -56,7 +52,7 @@ setup(name='pyHMSA-fileformat-tiff',
       entry_points=\
         {
          'pyhmsa.fileformat.exporter':
-            ['TIFF = pyhmsa.fileformat.exporter.tiff:ExporterTIFF',
-             'TIFF (multi-page) = pyhmsa.fileformat.exporter.tiff:ExporterTIFFMultiPage'],
+            ['TIFF = pyhmsa_tiff.fileformat.exporter.tiff:ExporterTIFF',
+             'TIFF (multi-page) = pyhmsa_tiff.fileformat.exporter.tiff:ExporterTIFFMultiPage'],
          }
      )

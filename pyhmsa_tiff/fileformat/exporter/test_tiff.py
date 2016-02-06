@@ -23,8 +23,8 @@ from pyhmsa.datafile import DataFile
 from pyhmsa.spec.condition.acquisition import AcquisitionRasterXY
 from pyhmsa.spec.datum.imageraster import ImageRaster2D
 from pyhmsa.type.numerical import _SUPPORTED_DTYPES
-from pyhmsa.fileformat.exporter.tiff import ExporterTIFF, ExporterTIFFMultiPage
-import pyhmsa.util.tifffile as tifffile
+from pyhmsa_tiff.fileformat.exporter.tiff import ExporterTIFF, ExporterTIFFMultiPage
+import pyhmsa_tiff.util.tifffile as tifffile
 
 # Globals and constants variables.
 

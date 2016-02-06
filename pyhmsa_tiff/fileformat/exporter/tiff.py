@@ -1,20 +1,7 @@
 #!/usr/bin/env python
 """
-================================================================================
-:mod:`raw` -- Export to TIFF file format
-================================================================================
-
-.. module:: raw
-   :synopsis: Export to TIFF file format
-
+Export to TIFF file format
 """
-
-# Script information for the file.
-__author__ = "Philippe T. Pinard"
-__email__ = "philippe.pinard@gmail.com"
-__version__ = "0.1"
-__copyright__ = "Copyright (c) 2015 Philippe T. Pinard"
-__license__ = "GPL v3"
 
 # Standard library modules.
 import os
@@ -27,7 +14,7 @@ from pyhmsa.spec.condition.acquisition import AcquisitionRasterXY
 from pyhmsa.spec.datum.analysislist import AnalysisList2D
 from pyhmsa.spec.datum.imageraster import ImageRaster2D, ImageRaster2DSpectral
 from pyhmsa.type.numerical import convert_unit
-import pyhmsa.util.tifffile as tifffile
+import pyhmsa_tiff.util.tifffile as tifffile
 
 # Globals and constants variables.
 _INCH_TO_MM = 25.4

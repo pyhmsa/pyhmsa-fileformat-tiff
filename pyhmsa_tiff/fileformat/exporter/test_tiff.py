@@ -18,13 +18,14 @@ import shutil
 # Third party modules.
 import numpy as np
 
+import tifffile
+
 # Local modules.
 from pyhmsa.datafile import DataFile
 from pyhmsa.spec.condition.acquisition import AcquisitionRasterXY
 from pyhmsa.spec.datum.imageraster import ImageRaster2D
 from pyhmsa.type.numerical import _SUPPORTED_DTYPES
 from pyhmsa_tiff.fileformat.exporter.tiff import ExporterTIFF, ExporterTIFFMultiPage
-import pyhmsa_tiff.util.tifffile as tifffile
 
 # Globals and constants variables.
 

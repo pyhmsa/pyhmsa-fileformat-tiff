@@ -42,7 +42,7 @@ setup(name='pyHMSA-fileformat-tiff',
 
       packages=find_packages(),
 
-      install_requires=['pyhmsa'],
+      install_requires=['pyhmsa', 'tifffile'],
       tests_require=['nose', 'coverage'],
 
       zip_safe=True,

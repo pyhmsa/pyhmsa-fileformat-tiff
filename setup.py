@@ -6,6 +6,8 @@ import os
 # Third party modules.
 from setuptools import setup, find_packages
 
+import versioneer
+
 # Local modules.
 
 # Globals and constants variables.
@@ -16,7 +18,7 @@ with open('README.rst', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='pyHMSA-tiff',
-      version='0.1',
+      version=versioneer.get_version(),
       description='',
       long_description=long_description,
 
@@ -54,5 +56,7 @@ setup(name='pyHMSA-tiff',
          'pyhmsa.fileformat.exporter':
             ['TIFF = pyhmsa_tiff.fileformat.exporter.tiff:ExporterTIFF',
              'TIFF (multi-page) = pyhmsa_tiff.fileformat.exporter.tiff:ExporterTIFFMultiPage'],
-         }
+         },
+
+      cmdclass=versioneer.get_cmdclass(),
      )

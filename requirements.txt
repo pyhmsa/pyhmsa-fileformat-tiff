@@ -1,0 +1,5 @@
+pyhmsa
+tifffile
+nose
+coverage
+numpy

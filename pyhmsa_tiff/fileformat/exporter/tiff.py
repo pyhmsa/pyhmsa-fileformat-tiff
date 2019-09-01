@@ -42,7 +42,7 @@ class _BaseExporterTIFFThread(_ExporterThread):
         return (1.0 / dx_in, 1.0 / dy_in)
 
     def _create_tiff_writer(self, filepath):
-        return tifffile.TiffWriter(filepath, bigtiff=True, software='pyHMSA')
+        return tifffile.TiffWriter(filepath, bigtiff=True)
 
     def _run(self, datafile, dirpath, compress, *args, **kwargs):
         raise NotImplementedError

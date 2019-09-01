@@ -92,7 +92,7 @@ class TestExporterTIFFMultiPage(unittest.TestCase):
         self.assertEqual(len(filepaths), 1)
 
         with tifffile.TiffFile(filepaths[0]) as tif:
-            self.assertEqual(len(tif), len(_SUPPORTED_DTYPES))
+            self.assertEqual(len(tif.pages), len(_SUPPORTED_DTYPES))
 
 if __name__ == '__main__': #pragma: no cover
     logging.getLogger().setLevel(logging.DEBUG)
